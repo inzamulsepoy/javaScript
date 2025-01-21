@@ -10,6 +10,7 @@
   <body>
 
     <script>
+      /*
       
       function greeting(){
         console.log('hello');
@@ -41,6 +42,31 @@
         }
 
         display(2);
+
+       function run(param){
+        param();
+       }
+
+       run(function(){
+        console.log('hello4');
+
+       });
+
+       */
+
+       setTimeout(function(){
+        console.log('timeout');
+        console.log('timeout2');
+       },3000);
+
+       console.log('next line');
+       
+      //  setInterval(function(){
+      //   console.log('interval');
+      //  },3000);
+
+      console.log('nextline2');
+
     </script>
 
   </body>
