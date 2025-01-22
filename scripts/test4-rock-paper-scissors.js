@@ -11,9 +11,13 @@ console.log( JSON.parse(localStorage.getItem('score')));
 let isAutoplaying = false;
 let intervalId;
 
+//const autoPlay = () =>{  (not recommended in first level)
+
+//};
+
 function autoPlay(){
   if (!isAutoplaying){
-    intervalId = setInterval(function(){
+    intervalId = setInterval(()=>{
       const playerMove = pickComputerMove();
       playGame(playerMove);
     },1000);
